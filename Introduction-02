@@ -1,0 +1,32 @@
+find out car's mileage using starting and ending value of car's odometer
+
+startingvalue = input("What is your starting value?")
+startingvalue = int(startingvalue)
+endingvalue = input("What is your ending value?")
+endingvalue = int(endingvalue)
+fuelconsumption = input("what is the fuel consumed?")
+fuelconsumption = int(fuelconsumption)
+Mileage = (endingvalue - startingvalue) / fuelconsumption
+print(Mileage)
+
+********************************************************************
+
+
+Using the starting and ending values of the car's odometer and measure of fuel consumed
+calculate the no of stops one could make for refueling, whiletraveling form Banglore to GOA
+a distance of 560 km?
+
+
+mileage = input("what is the mileage of the car?")
+mileage = int(mileage)
+tankcapacity = input("what is the tankcapacity?")
+tankcapacity = int(tankcapacity)
+distance = 560
+distance_full = mileage*tankcapacity
+Nooftime = distance / distance_full
+value  = distance % distance_full
+actualno = (distance // distance_full) + 1
+if value == 0:
+    print(Nooftime)
+else:
+    print(actualno)
