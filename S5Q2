@@ -1,0 +1,13 @@
+'''Ask the user to enter a number till he enter0. print maximum and minimum values among numbers entered'''
+
+def main():
+    num = 1
+    Mylist = []
+    while num>0:
+        num = int(input("enter any number"))
+        if num != 0:
+            Mylist.append(num)
+    print(max(Mylist))
+    print(min(Mylist))
+    
+main()
